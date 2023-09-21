@@ -380,3 +380,42 @@ nav {
   margin-bottom: 0;
   color: var(--very-light-pink);
 }
+
+@media (max-width: 900px) {
+  .navbar-left ul {
+    display: none;
+  }
+  .navbar-email {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .desktop-menu {
+      display: none;
+  }
+}
+@media (max-width: 640px) {
+  .product-detail {
+      width: 100%;
+  }
+  .cards-container {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  .product-card {
+    width: 140px;
+  }
+  .product-card img {
+    width: 140px;
+    height: 140px;
+  }
+  .product-detail-secondary {
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) {
+  .mobile-menu {
+      display: none;
+  }
+}
