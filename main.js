@@ -1,4 +1,12 @@
 const cardsContainer = document.querySelector('.cards-container');
+const menuMobile = document.querySelector('.mobile-menu');
+const menuIcon = document.querySelector('.menu');
+
+function toggleBurgerMenu() {
+    menuMobile.classList.toggle('inactive');
+}
+
+menuIcon.addEventListener('click', toggleBurgerMenu);
 
 const productList = [];
 productList.push({
