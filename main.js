@@ -1,12 +1,19 @@
 const cardsContainer = document.querySelector('.cards-container');
 const menuMobile = document.querySelector('.mobile-menu');
 const menuIcon = document.querySelector('.menu');
+const cartAside = document.querySelector('.product-detail');
+const shoppingCartIcon = document.querySelector('.navbar-shopping-cart');
 
 function toggleBurgerMenu() {
     menuMobile.classList.toggle('inactive');
 }
 
+function toggleCartAside() {
+    cartAside.classList.toggle('inactive');
+}
+
 menuIcon.addEventListener('click', toggleBurgerMenu);
+shoppingCartIcon.addEventListener('click', toggleCartAside);
 
 const productList = [];
 productList.push({
